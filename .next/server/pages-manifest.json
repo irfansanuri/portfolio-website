@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/crypto": "pages/crypto.html",
+  "/": "pages/index.html",
+  "/netflix": "pages/netflix.html",
+  "/property": "pages/property.html",
+  "/resume": "pages/resume.html",
+  "/twitch": "pages/twitch.html",
+  "/404": "pages/404.html"
+}
