@@ -11,24 +11,26 @@ const About = () => {
           <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
             About
           </p>
-          <h2 className='py-4'>Who I Am</h2>
+          <h2 className='py-4'>Who is Irfan Sanuri?</h2>
           <p className='py-2 text-gray-600'>
-            I specialize in building mobile responsive front-end UI applications
-            that connect with API’s and other backend technologies. I’m
-            passionate about learning new technologies and understand there is
-            more than one way to accomplish a task. Though I am most proficient
-            in building front-end applications using HTML, CSS, Javascript, and
-            React, I am a quick learner and can pick up new tech stacks as
-            needed. I believe that being a great developer is not using one
-            specific language, but choosing the best tool for the job.
+            I’m a front-end developer with a passion for technology and a drive 
+            to create engaging and responsive user interfaces. I graduated with a first-class 
+            degree in artificial intelligence from Multimedia University, where I gained a solid 
+            foundation in programming and a deep understanding of how technology can transform 
+            our world. I believe technology is more than just a tool, it's a magical gateway to 
+            endless possibilities and a symbol of our wildest dreams and aspirations. Technology is
+            the closest thing we have to fairytales and a beacon of hope for a brighter future.
           </p>
           <p className='py-2 text-gray-600'>
-            I started web developement in 2013 managing multiple e-commerce
-            websites on CMS platforms such as WordPress, BigCommerce, and
-            Shopify. I have experience working directly with clients and taking
-            mock wireframes all the way to deployed applications. In my spare
-            time I run Code Commerce, a Youtube channel where I teach web
-            developement and various front-end technologies.
+            My web development journey began in 2018 when I experimented with Shopify and WordPress 
+            to build e-commerce sites. However, I soon realized the challenges of customizing prebuilt 
+            templates to fit my exact needs. This roadblock fueled my determination to build websites 
+            from scratch, with a focus on crafting mobile-responsive designs that deliver an efficient 
+            and intuitive user experience. I am committed to delivering high-quality code that meets the 
+            needs of my clients and users, and I stay up-to-date with the latest tech developments. 
+          </p>
+          <p className='py-2 text-gray-600'>
+            If you're interested in working together or discussing technology, feel free to get in touch!
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
