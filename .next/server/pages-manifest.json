@@ -1,12 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/coffee-connoisseur": "pages/coffee-connoisseur.html",
-  "/crypto": "pages/crypto.html",
-  "/": "pages/index.html",
-  "/netflix": "pages/netflix.html",
-  "/resume": "pages/resume.html",
-  "/twitch": "pages/twitch.html",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js"
 }
