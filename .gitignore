@@ -28,6 +28,7 @@ logs/
 /.eslintcache
 /.next/
 /out/
+/public/
 /.npm/
 
 # Testing
