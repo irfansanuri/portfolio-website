@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Next.js
+.next/
+out/
+
+# Environment variables
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Logs and Temporary Files
+*.log
+*.log.*
+logs/
+*.tmp
+
+# Build artifacts
+/.eslintcache
+/.next/
+/out/
+/public/
+/.npm/
+
+# Testing
+/coverage/
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Custom
+/custom-directory/
+/custom-file.txt
