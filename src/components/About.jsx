@@ -27,7 +27,7 @@ const About = () => {
                   <i className="fas fa-envelope" />
                 </a>
                 <a href="#">
-                  <i class="fas fa-user"></i>
+                  <i className="fas fa-user"></i>
                 </a>
               </div>
             </div>

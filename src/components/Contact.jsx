@@ -158,7 +158,7 @@ const Contact = () => {
           <div className="col-lg-4 m-15px-tb">
             <div className="contact-info media box-shadow">
               <div className="icon">
-                <i class="fas fa-link"></i>
+                <i className="fas fa-link"></i>
               </div>
               <div className="media-body">
                 <h6 className="dark-color font-alt">Connect With Me</h6>
@@ -181,7 +181,7 @@ const Contact = () => {
                     <i className="fas fa-envelope fa-lg" />
                   </a>
                   <a href="#" className="p-2 mr-1">
-                    <i class="fas fa-user fa-lg" />
+                    <i className="fas fa-user fa-lg" />
                   </a>
                 </div>
               </div>
