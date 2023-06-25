@@ -69,11 +69,11 @@ const Home = () => {
           <li>
             <a className="nav-link" href="#about">
               <i className="far fa-address-card" />
-              <span>About Me</span>
+              <span>About</span>
             </a>
           </li>
           <li>
-            <a className="nav-link" href="#services">
+            <a className="nav-link" href="#skills">
               <i className="fas fa-concierge-bell" />
               <span>Services</span>
             </a>
@@ -81,13 +81,13 @@ const Home = () => {
           <li>
             <a className="nav-link" href="#projects">
               <i className="fas fa-briefcase" />
-              <span>Portfolio</span>
+              <span>Projects</span>
             </a>
           </li>
           <li>
-            <a className="nav-link" href="#blog">
+            <a className="nav-link" href="#testimonials">
               <i className="fas fa-blog" />
-              <span>Blog</span>
+              <span>Testimonials</span>
             </a>
           </li>
           <li>

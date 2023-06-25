@@ -3,7 +3,7 @@ import { sliderProps } from "../sliderProps";
 
 const Testimonials = () => {
   return (
-    <section className="section">
+    <section id="testimonials" className="section">
       <div className="container">
         <div className="row sm-m-25px-b m-35px-b">
           <div className="col-md-12">
