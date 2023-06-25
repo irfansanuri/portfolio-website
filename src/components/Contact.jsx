@@ -26,10 +26,10 @@ const Contact = () => {
     } else {
       emailjs
         .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
+          "service_cmcf6pf", // service id
+          "template_rf1vcfc", // template id
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "L0WraELHfcZ5NwLuo" // public api
         )
         .then(
           (response) => {
@@ -56,7 +56,8 @@ const Contact = () => {
             <div className="section-title">
               <h3 className="dark-color text-uppercase">Get in touch</h3>
               <p className="text-uppercase small">
-                A Lead UX &amp; UI designer based in Canada
+                I am available for freelance or full-time positions. Contact me
+                and let's talk.
               </p>
             </div>
           </div>
@@ -157,16 +158,35 @@ const Contact = () => {
           <div className="col-lg-4 m-15px-tb">
             <div className="contact-info media box-shadow">
               <div className="icon">
-                <i className="ti-location-pin" />
+                <i class="fas fa-link"></i>
               </div>
               <div className="media-body">
-                <h6 className="dark-color font-alt">Our Address</h6>
-                <p>
-                  123 Stree New York City , United States Of America 750065.
-                </p>
+                <h6 className="dark-color font-alt">Connect With Me</h6>
+                <div className="social-icon">
+                  <a
+                    href="https://www.linkedin.com/in/irfansanuri/"
+                    target="_blank"
+                    className="p-2 mr-1"
+                  >
+                    <i className="fab fa-linkedin-in fa-lg" />
+                  </a>
+                  <a
+                    href="https://github.com/irfansanuri"
+                    target="_blank"
+                    className="p-2 mr-1 "
+                  >
+                    <i className="fab fa-github fa-lg" />
+                  </a>
+                  <a href="#contactus" className="p-2 mr-1">
+                    <i className="fas fa-envelope fa-lg" />
+                  </a>
+                  <a href="#" className="p-2 mr-1">
+                    <i class="fas fa-user fa-lg" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="contact-info media box-shadow">
+            {/* <div className="contact-info media box-shadow">
               <div className="icon">
                 <i className="ti-mobile" />
               </div>
@@ -187,12 +207,10 @@ const Contact = () => {
               <div className="media-body">
                 <h6 className="dark-color font-alt">Our Email</h6>
                 <p>
-                  info@domainname.com
-                  <br />
-                  contact@domainname.com
+                  irfansanuri98@gmail.com
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* end form */}
