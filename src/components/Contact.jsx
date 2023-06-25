@@ -49,7 +49,7 @@ const Contact = () => {
 
   console.log(error);
   return (
-    <section id="contactus" className="section gray-bg">
+    <section id="contactus" className="section">
       <div className="container">
         <div className="row sm-m-25px-b m-35px-b">
           <div className="col-md-12">

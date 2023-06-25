@@ -1,13 +1,11 @@
-import Head from 'next/head'
+import Head from "next/head";
 import About from "@/src/components/About";
-import Blog from "@/src/components/Blog";
 import Contact from "@/src/components/Contact";
 import Skills from "@/src/components/Skills";
-import Testiminails from "@/src/components/Testiminails";
+import Testimonials from "@/src/components/Testimonials";
 import { tony } from "@/src/layouts/utils";
 import { Fragment, useEffect, useState } from "react";
 
-import Services from "@/src/components/Services";
 import TypingAnimation from "@/src/components/TypingAnimation";
 import Footer from "@/src/layouts/Footer";
 import dynamic from "next/dynamic";
@@ -141,26 +139,35 @@ const Home = () => {
         </section>
         {/* End Home Banner */}
 
-        {/* End Home Banner */}
-        {/* about us */}
-        <About />
-        {/* end about us */}
-        {/* fun */}
-        <Skills />
-        {/* End fun */}
-        {/* resume */}
-        <Services />
-        {/* End resume */}
+        {/* About us */}
+        <div className="gray-bg">
+          <About />
+        </div>
+        {/* end About us */}
+
+        {/* Skills */}
+        <div className="">
+          <Skills />
+        </div>
+        {/* End Skills */}
+
         {/* Work */}
-        <Projects />
+        <div className="gray-bg">
+          <Projects />
+        </div>
         {/* End work */}
-        {/* Testiminails */}
-        <Testiminails />
-        {/* End Testiminails */}
-        {/* Blog */}
-        <Blog />
-        {/* End Blog */}
-        <Contact />
+
+        {/* Testimonials */}
+        <div className="">
+          <Testimonials />
+        </div>
+        {/* End Testimonials */}
+
+        {/* Contact */}
+        <div className="gray-bg">
+          <Contact />
+        </div>
+        {/* End Contact */}
       </main>
       <Footer />
     </Fragment>

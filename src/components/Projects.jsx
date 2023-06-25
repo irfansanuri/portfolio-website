@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 const Projects = () => {
   // Isotope
   const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("*");
   useEffect(() => {
     setTimeout(() => {
       isotope.current = new Isotope(".portfolio-content", {
@@ -29,7 +28,7 @@ const Projects = () => {
         <div className="row sm-m-25px-b m-35px-b">
           <div className="col-md-12">
             <div className="section-title">
-              <h3 className="dark-color text-uppercase">MY PROJECTS</h3>
+              <h3 className="dark-color text-uppercase">My Projects</h3>
               <p className="text-uppercase small">
                 Welcome to my project gallery. Enjoy!
               </p>
@@ -42,30 +41,30 @@ const Projects = () => {
           <div className="grid-item product branding">
             <div className="portfolio-box-01">
               <div className="portfolio-img">
-                <img src="static/img/portfolio-1.jpg" alt="image" />
+                <img src="static/img/projects/coffee.jpg" alt="image" />
               </div>
               <div className="portfolio-info">
-                <h5>Our Photography</h5>
-                <span>Design</span>
+                <h5>Coffee Connoisseur</h5>
+                <span>Next JS</span>
               </div>
-              <a className="link-overlay" href="#" />
+              <a className="link-overlay" href="/coffee-connoisseur" />
             </div>
           </div>{" "}
           {/* grid item */}
           <div className="grid-item product branding">
             <div className="portfolio-box-01">
               <div className="portfolio-img">
-                <img src="static/img/portfolio-6.jpg" alt="image" />
+                <img src="static/img/projects/netflix.jpg" alt="image" />
               </div>
               <div className="portfolio-info">
-                <h5>Our Photography</h5>
-                <span>Design</span>
+                <h5>Netflix App</h5>
+                <span>Next JS</span>
               </div>
-              <a className="link-overlay" href="#" />
+              <a className="link-overlay" href="/netflix" />
             </div>
           </div>{" "}
           {/* grid item */}
-          <div className="grid-item product branding">
+          {/* <div className="grid-item product branding">
             <div className="portfolio-box-01">
               <div className="portfolio-img">
                 <img src="static/img/portfolio-2.jpg" alt="image" />
@@ -76,9 +75,9 @@ const Projects = () => {
               </div>
               <a className="link-overlay" href="#" />
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
-          <div className="grid-item product branding">
+          {/* <div className="grid-item product branding">
             <div className="portfolio-box-01">
               <div className="portfolio-img">
                 <img src="static/img/portfolio-3.jpg" alt="image" />
@@ -89,9 +88,9 @@ const Projects = () => {
               </div>
               <a className="link-overlay" href="#" />
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
-          <div className="grid-item product branding">
+          {/* <div className="grid-item product branding">
             <div className="portfolio-box-01">
               <div className="portfolio-img">
                 <img src="static/img/portfolio-4.jpg" alt="image" />
@@ -102,9 +101,9 @@ const Projects = () => {
               </div>
               <a className="link-overlay" href="#" />
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
-          <div className="grid-item product branding">
+          {/* <div className="grid-item product branding">
             <div className="portfolio-box-01">
               <div className="portfolio-img">
                 <img src="static/img/portfolio-5.jpg" alt="image" />
@@ -115,7 +114,7 @@ const Projects = () => {
               </div>
               <a className="link-overlay" href="#" />
             </div>
-          </div>{" "}
+          </div>{" "} */}
           {/* grid item */}
         </div>{" "}
         {/* portfolio-content */}

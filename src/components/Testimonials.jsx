@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { sliderProps } from "../sliderProps";
 
-const Testiminails = () => {
+const Testimonials = () => {
   return (
-    <section className="section gray-bg">
+    <section className="section">
       <div className="container">
         <div className="row sm-m-25px-b m-35px-b">
           <div className="col-md-12">
@@ -110,4 +110,4 @@ const Testiminails = () => {
     </section>
   );
 };
-export default Testiminails;
+export default Testimonials;
