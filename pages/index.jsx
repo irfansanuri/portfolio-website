@@ -33,7 +33,7 @@ const Home = () => {
         <meta name="keywords" content="Irfan - Portfolio Template" />
         <meta name="description" content="Irfan - Portfolio Template" />
         {/* title */}
-        <title>Irfan SINI - Front-End Web Developer</title>
+        <title>Irfan SINi - Front-End Web Developer</title>
       </Head>
       <div className="mob-header">
         <div className="d-flex">
