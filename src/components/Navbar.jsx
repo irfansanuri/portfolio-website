@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="mob-header">
         <div className="d-flex">
           <div className="navbar-brand">
-            <a className="logo-text" href="index.html">
+            <a className="logo-text" href="/">
               Irfan
             </a>
           </div>
