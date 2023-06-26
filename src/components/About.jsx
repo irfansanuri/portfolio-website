@@ -23,7 +23,7 @@ const About = () => {
                 <a href="https://github.com/irfansanuri" target="_blank">
                   <i className="fab fa-github" />
                 </a>
-                <a href="#contactus">
+                <a href="/#contactus">
                   <i className="fas fa-envelope" />
                 </a>
                 <a href="#">

@@ -9,45 +9,10 @@ const Contact = () => {
     subject: "",
   });
   const { name, email, subject, message } = mailData;
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
   const onChange = (e) => {
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   };
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (
-      name.length === 0 ||
-      email.length === 0 ||
-      message.length === 0 ||
-      subject.length === 0
-    ) {
-      setError(true);
-    } else {
-      emailjs
-        .send(
-          "service_cmcf6pf", // service id
-          "template_rf1vcfc", // template id
-          mailData,
-          "L0WraELHfcZ5NwLuo" // public api
-        )
-        .then(
-          (response) => {
-            setError(false);
-            setSuccess(true);
-            setTimeout(() => {
-              setSuccess(false);
-            }, 3000);
-            setMailData({ name: "", email: "", message: "", subject: "" });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
-    }
-  };
 
-  console.log(error);
   return (
     <section id="contactus" className="section">
       <div className="container">
@@ -67,7 +32,11 @@ const Contact = () => {
           <div className="col-lg-8 m-15px-tb">
             <div className="contact-form box-shadow">
               <h4 className="dark-color font-alt m-20px-b">Say Something</h4>
-              <form onSubmit={(e) => onSubmit(e)} className="row">
+              <form
+                action="https://getform.io/f/232440af-197a-400f-893f-9ee9ba59476e"
+                method="POST"
+                encType="multipart/form-data"
+              >
                 <div className="col-md-6">
                   <div className="form-group">
                     <input
@@ -76,10 +45,9 @@ const Contact = () => {
                       value={name}
                       id="name"
                       placeholder="Name *"
-                      className={`form-control ${
-                        error ? (name.length !== 0 ? "" : "invalid") : ""
-                      }`}
+                      className="form-control"
                       type="text"
+                      required
                     />
                     <span className="input-focus-effect theme-bg" />
                   </div>
@@ -92,10 +60,9 @@ const Contact = () => {
                       value={email}
                       id="email"
                       placeholder="Email *"
-                      className={`form-control ${
-                        error ? (email.length !== 0 ? "" : "invalid") : ""
-                      }`}
+                      className="form-control"
                       type="email"
+                      required
                     />
                     <span className="input-focus-effect theme-bg" />
                   </div>
@@ -108,10 +75,9 @@ const Contact = () => {
                       value={subject}
                       id="subject"
                       placeholder="Subject *"
-                      className={`form-control ${
-                        error ? (subject.length !== 0 ? "" : "invalid") : ""
-                      }`}
+                      className="form-control"
                       type="text"
+                      required
                     />
                     <span className="input-focus-effect theme-bg" />
                   </div>
@@ -125,9 +91,8 @@ const Contact = () => {
                       id="message"
                       placeholder="Your message *"
                       rows={3}
-                      className={`form-control ${
-                        error ? (message.length !== 0 ? "" : "invalid") : ""
-                      }`}
+                      className="form-control"
+                      required
                     />
                     <span className="input-focus-effect theme-bg" />
                   </div>
@@ -143,13 +108,6 @@ const Contact = () => {
                       send message
                     </button>
                   </div>
-                  <span
-                    id="suce_message"
-                    className="text-success"
-                    style={{ display: success ? "block" : "none" }}
-                  >
-                    Message Sent Successfully
-                  </span>
                 </div>
               </form>
             </div>
@@ -186,31 +144,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="contact-info media box-shadow">
-              <div className="icon">
-                <i className="ti-mobile" />
-              </div>
-              <div className="media-body">
-                <h6 className="dark-color font-alt">Our Phone</h6>
-                <p>
-                  Office: +004 44444 44444
-                  <br />
-                  Office: +004 44444 44444
-                  <br />
-                </p>
-              </div>
-            </div>
-            <div className="contact-info media box-shadow">
-              <div className="icon">
-                <i className="ti-email" />
-              </div>
-              <div className="media-body">
-                <h6 className="dark-color font-alt">Our Email</h6>
-                <p>
-                  irfansanuri98@gmail.com
-                </p>
-              </div>
-            </div> */}
           </div>
         </div>
         {/* end form */}

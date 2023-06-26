@@ -24,9 +24,7 @@ const Netflix = () => {
         <div className="row m-40px-tb">
           <div className="col-12 col-lg-9 pb-4">
             <h3 className="py-3">Overview</h3>
-            <p>
-              Still Under Development
-            </p>
+            <p>Still Under Development</p>
             <div className="btn-bar go-to">
               <a
                 className="m-btn m-btn-theme mr-2"

@@ -67,6 +67,7 @@ const Collaboration = () => {
             </div>
           </SwiperSlide>
           {/* / */}
+          <div className="owl-dots"></div>
         </Swiper>
         <div className="section-title">
           <p className="dark-color small">
