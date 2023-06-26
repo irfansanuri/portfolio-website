@@ -34,8 +34,16 @@ export const sliderProps = {
         slidesPerView: 1,
         spaceBetween: 30,
       },
-      800: {
+      425: {
         slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 4,
         spaceBetween: 30,
       },
     },

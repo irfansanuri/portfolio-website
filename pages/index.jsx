@@ -2,7 +2,7 @@ import Head from "next/head";
 import About from "@/src/components/About";
 import Contact from "@/src/components/Contact";
 import Skills from "@/src/components/Skills";
-import Testimonials from "@/src/components/Testimonials";
+import Collaboration from "@/src/components/Collaboration";
 import { tony } from "@/src/layouts/utils";
 import { Fragment, useEffect, useState } from "react";
 
@@ -33,7 +33,7 @@ const Home = () => {
         <meta name="keywords" content="Irfan - Portfolio Template" />
         <meta name="description" content="Irfan - Portfolio Template" />
         {/* title */}
-        <title>Irfan SINi - Front-End Web Developer</title>
+        <title>Irfan - Front-End Web Developer</title>
       </Head>
       <div className="mob-header">
         <div className="d-flex">
@@ -86,8 +86,8 @@ const Home = () => {
           </li>
           <li>
             <a className="nav-link" href="#testimonials">
-              <i className="fas fa-blog" />
-              <span>Testimonials</span>
+              <i className="fas fa-layer-group" />
+              <span>Collab</span>
             </a>
           </li>
           <li>
@@ -157,11 +157,11 @@ const Home = () => {
         </div>
         {/* End work */}
 
-        {/* Testimonials */}
+        {/* Collaboration */}
         <div className="">
-          <Testimonials />
+          <Collaboration />
         </div>
-        {/* End Testimonials */}
+        {/* End Collaboration */}
 
         {/* Contact */}
         <div className="gray-bg">
