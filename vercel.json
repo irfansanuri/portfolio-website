@@ -17,6 +17,5 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [],
-  "exclude": ["public/**"]
+  "public": true
 }
