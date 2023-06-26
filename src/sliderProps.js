@@ -28,7 +28,7 @@ export const sliderProps = {
       delay: 2500,
       disableOnInteraction: false,
     },
-    speed: 500,
+    speed: 100,
     breakpoints: {
       0: {
         slidesPerView: 1,
