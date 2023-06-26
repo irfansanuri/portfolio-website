@@ -33,7 +33,7 @@ const Contact = () => {
             <div className="contact-form box-shadow">
               <h4 className="dark-color font-alt m-20px-b">Say Something</h4>
               <form
-                action="https://getform.io/f/232440af-197a-400f-893f-9ee9ba59476e"
+                action={process.env.NEXT_PUBLIC_FORM_ENDPOINT}
                 method="POST"
                 encType="multipart/form-data"
               >
