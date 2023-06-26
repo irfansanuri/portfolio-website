@@ -27,7 +27,6 @@ logs/
 # Build artifacts
 /.eslintcache
 /.next/
-/public/
 /out/
 /.npm/
 
