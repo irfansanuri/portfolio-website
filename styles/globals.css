@@ -1,37 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
+}
+.video-bg-container {
+  position: absolute;
+  z-index: -1;
+  inset: 0px;
+  overflow: hidden;
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-image: none;
+}
+.video-bg-container video {
+  margin: auto;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: auto;
 }
 
-@layer base {
-  body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
-  }
-
-  h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
-  }
-
-  h2 {
-    @apply text-3xl sm:text-4xl
-  }
-  
-  li {
-    @apply cursor-pointer
-  }
-
-  button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
-  }
+.primary-color{
+  color: #d9832e;
 }

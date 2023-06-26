@@ -1,13 +1,22 @@
 {
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          {
-            "key": "X-Frame-Options",
-            "value": "ALLOW-FROM https://getform.io/thank-you"
-          }
-        ]
-      }
-    ]
-  }
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "ALLOW-FROM https://getform.io/thank-you?id=232440af-197a-400f-893f-9ee9ba59476e"
+        }
+      ]
+    }
+  ],
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [],
+  "exclude": ["public/**"]
+}

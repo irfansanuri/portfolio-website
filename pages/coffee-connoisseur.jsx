@@ -1,87 +1,90 @@
-import Image from 'next/image';
-import React from 'react';
-import coffeeImg from '../public/assets/projects/coffee.png';
-import { RiRadioButtonFill } from 'react-icons/ri';
-import Link from 'next/link';
+import React from "react";
+
+const technologies = [
+  "NextJS",
+  "TypeScript",
+  "Foursquare",
+  "AirTable",
+  "Unsplash",
+  "Geolocation API",
+  "SWR",
+];
+
+const overview = `
+Coffee Connoisseur is a captivating NextJS website designed to
+help coffee enthusiasts discover nearby cafes and coffee shops.
+Built with a powerful technology stack, including NextJS,
+TypeScript, Foursquare, AirTable, Unsplash, and Geolocation API,
+Caffeine Finder offers a personalized and visually appealing user
+experience. By harnessing Geolocation API, we pinpoint the user's
+location and fetch tailored recommendations from Foursquare. Data
+is then stored in AirTable and efficiently rendered using a
+combination of Static and Client Side Rendering techniques,
+ensuring a responsive and engaging experience in the quest for the
+perfect cup of coffee.
+`;
 
 const CoffeeConnoisseur = () => {
   return (
-    <div className='w-full'>
-      <div className='w-screen h-[50vh] relative'>
-        <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
-        <Image
-          className='absolute z-1'
-          layout='fill'
-          objectFit='cover'
-          src={coffeeImg}
-          alt='/'
-        />
-        <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Coffee Connoisseur</h2>
-          <h3>Next JS / FourSquare / Geolocation</h3>
+    <section id="coffee-connoisseur" className="main-left">
+      <div
+        className="bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url(static/img/projects/coffee.jpg)",
+        }}
+      >
+        <div
+          className="d-flex align-items-end pb-4"
+          style={{ backgroundColor: "rgba(0,0,0,.7)", height: "50vh" }}
+        >
+          <div className="container text-white">
+            <h1>Coffee-Connoisseur</h1>
+            <p>Next JS / FourSquare / Geolocation</p>
+          </div>
         </div>
       </div>
-
-      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
-        <div className='col-span-4'>
-          <p>Project</p>
-          <h2>Overview</h2>
-          <p>
-          Coffee Connoisseur is a captivating NextJS website designed to help coffee enthusiasts discover nearby cafes and coffee shops. 
-          Built with a powerful technology stack, including NextJS, TypeScript, Foursquare, AirTable, Unsplash, and Geolocation API, 
-          Caffeine Finder offers a personalized and visually appealing user experience. By harnessing Geolocation API, we pinpoint 
-          the user's location and fetch tailored recommendations from Foursquare. Data is then stored in AirTable and efficiently rendered 
-          using a combination of Static and Client Side Rendering techniques, ensuring a responsive and engaging experience in the quest 
-          for the perfect cup of coffee.
-          </p>
-          <a
-            href='https://github.com/irfansanuri/discover-coffee'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4 mr-8'>Code</button>
-          </a>
-          <a
-            href='https://discover-coffee-bi99.vercel.app/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4'>Demo</button>
-          </a>
-        </div>
-        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
-          <div className='p-2'>
-            <p className='text-center font-bold pb-2'>Technologies</p>
-            <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> NextJS
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Typescript
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Foursquare
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> AirTable
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Unsplash
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Geolocation API
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> SWR
-              </p>
+      <div className="container">
+        <div className="row m-40px-tb">
+          <div className="col-12 col-lg-9 pb-4">
+            <h3 className="py-3">Overview</h3>
+            <p>
+              {overview}
+            </p>
+            <div className="btn-bar go-to">
+              <a
+                className="m-btn m-btn-theme mr-2"
+                href="https://github.com/irfansanuri/discover-coffee"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
+              </a>
+              <a
+                className="m-btn m-btn-t-theme"
+                href="https://discover-coffee-bi99.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Demo
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-3">
+            <div className="feature-box-2">
+              <p className="text-center font-weight-bold pb-2">Technologies</p>
+              {technologies.map((name, index) => (
+                <p key={index}>
+                  <i className="fas fa-circle primary-color mr-2" /> {name}
+                </p>
+              ))}
             </div>
           </div>
         </div>
-        <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
-        </Link>
+        <div className="my-4">
+          <a href="/">Back To Home</a>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

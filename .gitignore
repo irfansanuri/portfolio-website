@@ -1,36 +1,43 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Next.js
+.next/
+out/
 
-# testing
-/coverage
+# Environment variables
+.env
 
-# next.js
-/.next/
-/out/
+# IDE
+.idea/
+.vscode/
 
-# production
-/build
-
-# misc
+# Operating System Files
 .DS_Store
-*.pem
+Thumbs.db
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# Logs and Temporary Files
+*.log
+*.log.*
+logs/
+*.tmp
 
-# local env files
-.env*.local
+# Build artifacts
+/.eslintcache
+/.next/
+/public/
+/out/
+/.npm/
 
-# vercel
-.vercel
+# Testing
+/coverage/
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Custom
+/custom-directory/
+/custom-file.txt
