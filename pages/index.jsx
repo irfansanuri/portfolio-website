@@ -8,6 +8,7 @@ import { Fragment, useEffect, useState } from "react";
 
 import TypingAnimation from "@/src/components/TypingAnimation";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const Projects = dynamic(() => import("@/src/components/Projects"), {
   ssr: false,
@@ -65,6 +66,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+              <div className="col-md-6 d-none d-lg-block"><Image src="/static/img/home-potrait.png" width={1000} height={500} alt={"Irfan's standing image"}/></div>
+
             </div>
           </div>
           <div className="go-to go-to-next">
