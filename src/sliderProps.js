@@ -25,10 +25,10 @@ export const sliderProps = {
     spaceBetween: 30,
     autoplay: true,
     autoplay: {
-      delay: 500,
+      delay: 0,
       disableOnInteraction: false,
     },
-    speed: 500,
+    speed: 1000,
     breakpoints: {
       0: {
         slidesPerView: 1,
