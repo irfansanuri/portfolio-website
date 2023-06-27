@@ -14,61 +14,66 @@ const Collaboration = () => {
             </div>
           </div>
         </div>
+        {/* SwiperSlider needs to always be atleast 2X Slides Per View, That's why SwiperSlides is looped twice*/}
         <Swiper {...sliderProps.testimonial}>
           {/* testimonials */}
-          <SwiperSlide >
-            <div className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
-              <Image
-                src="/assets/collab/caricarz.svg"
-                alt="caricarz"
-                width={250}
-                height={100}
-              />
+          {Array(2).fill("").map((_ , index) => (
+            <div key={index}>
+              <SwiperSlide>
+                <div className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
+                  <Image
+                    src="/assets/collab/caricarz.svg"
+                    alt="caricarz"
+                    width={250}
+                    height={100}
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
+                <div>
+                  <Image
+                    src="/assets/collab/chargesini.svg"
+                    alt="caricarz"
+                    width={200}
+                    height={100}
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
+                <div>
+                  <Image
+                    src="/assets/collab/webby.svg"
+                    alt="caricarz"
+                    width={200}
+                    height={100}
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
+                <div>
+                  <Image
+                    src="/assets/collab/wallguru.png"
+                    alt="caricarz"
+                    width={100}
+                    height={100}
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
+                <div className="m-35px-t">
+                  <Image
+                    src="/assets/collab/solarspeed.png"
+                    alt="caricarz"
+                    width={200}
+                    height={19}
+                  />
+                </div>
+              </SwiperSlide>
             </div>
-          </SwiperSlide>
-          <SwiperSlide className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
-            <div>
-              <Image
-                src="/assets/collab/chargesini.svg"
-                alt="caricarz"
-                width={200}
-                height={100}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
-            <div>
-              <Image
-                src="/assets/collab/webby.svg"
-                alt="caricarz"
-                width={200}
-                height={100}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
-            <div>
-              <Image
-                src="/assets/collab/wallguru.png"
-                alt="caricarz"
-                width={100}
-                height={100}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="testimonial-col-01 border-0 d-flex justify-content-center align-items-center">
-            <div className="m-35px-t">
-              <Image
-                src="/assets/collab/solarspeed.png"
-                alt="caricarz"
-                width={200}
-                height={19}
-              />
-            </div>
-          </SwiperSlide>
+          ))}
           {/* / */}
-          <div className="owl-dots"></div>
         </Swiper>
+
         <div className="section-title">
           <p className="dark-color small">
             * Please note that due to the proprietary nature of these projects,
