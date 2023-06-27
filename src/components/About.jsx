@@ -12,7 +12,7 @@ const About = () => {
         <div className="row align-items-center">
           <div className="col-lg-5 m-15px-tb">
             <div className="about-me-img box-shadow">
-              <img src="static/img/about-us.jpg" alt="image" />
+              <img src="static/img/about-img.jpg" alt="image" className="w-100" />
               <div className="nav social-icon">
                 <a
                   href="https://www.linkedin.com/in/irfansanuri/"
